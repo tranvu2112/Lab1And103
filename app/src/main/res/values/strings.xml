@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Lab1 And103</string>
+    <string name="forget_password"><u>Forget password?</u></string>
+    <string name="get_otp"><u>Get OTP by SMS</u></string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? <b>Sign up</b> </string>
+</resources>
