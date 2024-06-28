@@ -116,11 +116,10 @@ public class PhoneActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-
                             Log.d("PhoneActivity", "signInWithCredential:success");
                             FirebaseUser user = task.getResult().getUser();
                             Toast.makeText(PhoneActivity.this, "Authentication successful.", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(PhoneActivity.this, LogoutActivity.class);
+                            Intent intent = new Intent(PhoneActivity.this, HomeActivity.class);
                             startActivity(intent);
                         } else {
                             Log.w("PhoneActivity", "signInWithCredential:failure", task.getException());
